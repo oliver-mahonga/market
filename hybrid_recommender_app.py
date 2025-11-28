@@ -1,3 +1,4 @@
+# gorup 5 assignmnent
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -44,6 +45,9 @@ def load_and_preprocess_data(file_name):
     df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
     df['CustomerID'] = df['CustomerID'].astype(int)
 
+
+
+
     # Revenue
     df['Revenue'] = df['Quantity'] * df['UnitPrice']
 
@@ -67,6 +71,7 @@ def load_and_preprocess_data(file_name):
 
 
 # --- 2. MBA ENGINE: ASSOCIATION RULE MINING ---
+## hii function isiguzwe
 
 @st.cache_data
 def build_mba_engine(df):
